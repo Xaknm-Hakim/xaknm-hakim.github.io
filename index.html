@@ -2,25 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Muhammad Hakim Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hakim | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <div class="container">
 
-    <header>
+    <header class="hero">
       <h1>Muhammad Hakim</h1>
-      <p class="subtitle">Aspiring Infrastructure & Cloud Engineer</p>
+      <p class="subtitle">Aspiring Infrastructure &amp; Cloud Engineer</p>
+      <p class="intro">
+        Diploma in Information Technology student at UTHM with strong interest in Linux,
+        networking, and infrastructure systems. I enjoy building and deploying real-world
+        projects, focusing on system structure, containerization, troubleshooting, and
+        practical technical problem-solving.
+      </p>
     </header>
 
     <section>
       <h2>About Me</h2>
       <p>
-        Diploma IT student at UTHM with strong interest in Linux, networking, and infrastructure systems.
-        I enjoy building and deploying real-world projects, focusing on system structure, containerization,
-        and practical problem-solving.
+        I am building my foundation in infrastructure through hands-on projects across
+        system deployment and network design. My current work includes containerized web
+        deployment with Docker and Nginx, as well as enterprise-style campus network design
+        using Cisco technologies and routing protocols.
       </p>
     </section>
 
@@ -30,50 +36,67 @@
       <div class="project">
         <h3>StudexHub</h3>
         <p>
-          Internal academic management system built using Docker and Nginx,
-          focusing on deployment, system structure, and real-world usage.
+          Internal academic management system built using Docker and Nginx, with focus on
+          deployment workflow, system structure, and real-world usage in a collaborative
+          development environment.
         </p>
-        <a href="https://github.com/Xaknm-Hakim/StudexHub" target="_blank">View Project →</a>
+        <ul>
+          <li>Containerized deployment workflow using Docker</li>
+          <li>Reverse proxy configuration using Nginx</li>
+          <li>Practical collaboration with Git and version control</li>
+          <li>Focused on maintainability, structure, and deployment thinking</li>
+        </ul>
+        <p class="project-links">
+          <a href="https://github.com/Xaknm-Hakim/StudexHub" target="_blank" rel="noopener noreferrer">View Repository →</a>
+        </p>
       </div>
 
       <div class="project">
-        <h3>Enterprise Network Lab</h3>
+        <h3>Enterprise Campus Network Design</h3>
         <p>
-          Designed and configured a multi-network topology using Cisco Packet Tracer,
-          including VLANs, inter-VLAN routing, and OSPF.
+          Designed and implemented a realistic campus network following a three-tier
+          hierarchical model with redundancy, routing, centralized services, security
+          controls, and VoIP support.
         </p>
         <ul>
-          <li>VLAN segmentation and trunking</li>
-          <li>Inter-VLAN routing (router-on-a-stick)</li>
+          <li>Three-tier architecture: Core, Distribution, and Access</li>
+          <li>VLAN segmentation for Staff, Guest, VoIP, and Management networks</li>
+          <li>Gateway redundancy using HSRP</li>
           <li>Dynamic routing using OSPF</li>
-          <li>CLI-based troubleshooting</li>
+          <li>Centralized DHCP with relay configuration</li>
+          <li>VoIP deployment with CME and Option 150</li>
+          <li>ACL-based guest access control and troubleshooting documentation</li>
+          <li>Failure testing for redundancy and service continuity</li>
         </ul>
+        <p class="project-links">
+          <a href="https://github.com/Xaknm-Hakim/Network-Campus-Topology.git" target="_blank" rel="noopener noreferrer">View Repository →</a>
+        </p>
       </div>
-
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul class="skills">
         <li>Linux</li>
-        <li>Networking</li>
+        <li>Computer Networking</li>
         <li>Docker</li>
         <li>Nginx</li>
         <li>Git</li>
+        <li>Cisco Packet Tracer</li>
+        <li>OSPF</li>
+        <li>VLAN</li>
+        <li>HSRP</li>
+        <li>Troubleshooting</li>
       </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>Email: hakimz.7117@gmail.com</p>
-      <p>
-        <a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank">
-          LinkedIn Profile →
-        </a>
-      </p>
+      <p>Email: <a href="mailto:hakimz.7117@gmail.com">hakimz.7117@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">LinkedIn Profile →</a></p>
+      <p><a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">GitHub Profile →</a></p>
     </section>
 
   </div>
-
 </body>
 </html>
