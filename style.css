@@ -117,7 +117,7 @@ body {
   max-width: 300px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: 40% center;
+  object-position: 55% center;
   border-radius: 18px;
   border: 1px solid #30363d;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
