@@ -301,3 +301,35 @@ a:hover {
   }
 }
 
+.profile-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #0f1722;
+  border: 1px solid #273244;
+  border-radius: 14px;
+}
+
+.profile-actions {
+  margin-top: 18px;
+}
+
+.job-profile-preview {
+  background: #0f1722;
+  border: 1px solid #273244;
+  border-radius: 14px;
+  padding: 14px;
+  margin-top: 18px;
+}
+
+.job-profile-preview img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 10px;
+  color: #8b949e;
+  font-size: 0.95rem;
+}
