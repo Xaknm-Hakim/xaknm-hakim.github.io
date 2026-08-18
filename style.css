@@ -9,3 +9,15 @@ a { color:var(--blue); } a:focus-visible { outline:2px solid var(--green); outli
 @media (max-width:760px) { .page-width,.nav-shell { width:min(100% - 28px,1180px); }.nav-shell { min-height:unset; align-items:flex-start; flex-direction:column; padding:17px 0; gap:15px; }.nav-links { gap:8px 16px; }.hero,.resume-intro { grid-template-columns:1fr; gap:43px; }.hero { padding:72px 0 78px; }.identity-panel { width:min(100%,430px); }.systems-grid,.stack-grid { grid-template-columns:1fr; }.system-card { min-height:unset; padding:21px; }.card-index { margin-bottom:37px; }.stack-grid article { min-height:unset; }.direction { grid-template-columns:1fr; gap:17px; }.site-footer>.page-width,.pdf-heading { align-items:flex-start; flex-direction:column; }.site-footer div div { justify-content:flex-start; }.resume-intro { padding:72px 0 65px; }.pdf-area { padding:50px 0 75px; }.pdf-frame iframe { height:65vh; } }
 @media (max-width:390px) { .page-width,.nav-shell { width:calc(100% - 24px); }.brand i { display:none; }.nav-links { gap:8px 13px; }.nav-links a { font-size:.72rem; } h1 { font-size:3.3rem; }.focus { font-size:.75rem; }.actions { align-items:stretch; flex-direction:column; }.action { justify-content:space-between; }.system-card { padding:18px; }.card-index { font-size:.61rem; }.stack-grid article { padding:18px; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none !important; animation:none !important; } }
+
+/* Restrained interaction and entry motion. */
+.hero-copy { animation:enter-up .46s ease-out both; }
+.identity-panel { animation:enter-up .46s .12s ease-out both; }
+.system-card { transition:border-color .2s ease, background-color .2s ease, transform .2s ease; }
+.system-card:hover { transform:translateY(-3px); border-color:#3b545c; }
+.repo-link { display:inline-block; transition:color .18s ease, transform .18s ease; }
+.repo-link:hover,.repo-link:focus-visible { transform:translateX(3px); }
+.identity-panel .availability dd { animation:status-pulse 2.5s ease-in-out infinite; }
+@keyframes enter-up { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+@keyframes status-pulse { 0%,100% { text-shadow:0 0 0 rgba(154,204,85,0); } 50% { text-shadow:0 0 8px rgba(154,204,85,.34); } }
+@media (prefers-reduced-motion:reduce) { .hero-copy,.identity-panel,.identity-panel .availability dd { animation:none; } .system-card,.repo-link { transition:none; } }
