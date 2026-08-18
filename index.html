@@ -1,97 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Muhammad Hakim is a Diploma in Information Technology student at UTHM and aspiring Platform Engineer focused on cloud infrastructure, automation, and observability.">
-  <title>Muhammad Hakim | Aspiring Platform Engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muhammad Hakim — aspiring Platform Engineer focused on cloud infrastructure, Linux, automation, and observability.">
+  <title>Muhammad Hakim — Platform Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar" aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-current="page"><span>MH</span> Muhammad Hakim <i>/ Portfolio</i></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a><a href="#stack">Stack</a><a href="resume.html">Resume</a><a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
     </nav>
+  </header>
 
-    <main>
-      <header class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">UTHM · Diploma in Information Technology</p>
-          <h1>Muhammad Hakim</h1>
-          <p class="role">Aspiring Platform Engineer</p>
-          <p class="focus-line">Cloud Infrastructure <span>·</span> Linux <span>·</span> AWS <span>·</span> Terraform <span>·</span> Docker <span>·</span> Observability</p>
-          <p class="intro">I am building a foundation in platform engineering through practical work with Linux systems, containerised services, networking, and infrastructure automation. I am drawn to the work that follows an application build: deploying it well, automating routine operations, monitoring it, and making it recoverable, reliable, scalable, and maintainable.</p>
-          <div class="hero-links">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="resume.html">View Resume</a>
-          </div>
-          <p class="profile-links"><a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">GitHub</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+  <main>
+    <section class="hero page-width" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="kicker"><span class="signal" aria-hidden="true"></span> system profile / 2026</p>
+        <h1 id="intro-title">Muhammad<br>Hakim<span class="accent">.</span></h1>
+        <p class="role">Aspiring Platform Engineer</p>
+        <p class="focus">Cloud Infrastructure <b>·</b> Linux <b>·</b> AWS <b>·</b> Terraform <b>·</b> Docker <b>·</b> Observability</p>
+        <p class="hero-intro">I build and operate the systems around applications: deployment paths, infrastructure automation, service visibility, and the operational foundations that help services remain dependable.</p>
+        <div class="actions"><a class="action primary" href="#projects">View projects <span>↓</span></a><a class="action" href="resume.html">Resume <span>→</span></a></div>
+      </div>
+      <aside class="identity-panel" aria-label="Profile metadata">
+        <div class="portrait-wrap"><img src="images/profile.JPG" alt="Portrait of Muhammad Hakim"><span class="portrait-label">node / mh-01</span></div>
+        <dl>
+          <div><dt>Programme</dt><dd>Diploma in Information Technology</dd></div>
+          <div><dt>Institution</dt><dd>UTHM</dd></div>
+          <div><dt>Location</dt><dd>Malaysia</dd></div>
+          <div><dt>Focus</dt><dd>Platform Engineering / Cloud Infrastructure</dd></div>
+          <div class="availability"><dt>Status</dt><dd>Open to internship opportunities</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section page-width" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="kicker">01 / selected systems</p><h2 id="projects-title">Projects built around<br><span>systems thinking.</span></h2></div>
+      <div class="systems-grid">
+        <article class="system-card featured">
+          <div class="card-index">SYS-01 <span>WEB / PLATFORM</span></div><h3>StudexHub</h3>
+          <p>Full-stack academic management platform for semesters, courses, assignments, schedules, performance, and reminders.</p>
+          <p class="contribution"><strong>Contribution /</strong> Primary focus on backend and infrastructure: API layer, authentication and sessions, PostgreSQL with Prisma, notifications, containerised deployment, and operating workflows.</p>
+          <ul class="tech-list" aria-label="StudexHub technologies"><li>PostgreSQL</li><li>Prisma</li><li>Docker Compose</li><li>Nginx</li><li>Cloudflare Tunnel</li><li>Linux</li><li>Monitoring</li><li>CI / backups</li></ul>
+          <a class="repo-link" href="https://github.com/Xaknm-Hakim/StudexHub" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+        </article>
+        <article class="system-card">
+          <div class="card-index">SYS-02 <span>NETWORK</span></div><h3>Enterprise Campus<br>Network Design</h3>
+          <p>Enterprise campus network simulation designed for segmented connectivity, resilient routing, central services, and failure testing.</p>
+          <ul class="tech-list" aria-label="Enterprise Campus Network technologies"><li>VLAN</li><li>OSPF</li><li>HSRP</li><li>DHCP</li><li>ACLs</li><li>VoIP</li><li>Redundancy</li><li>Failover testing</li></ul>
+          <a class="repo-link" href="https://github.com/Xaknm-Hakim/Network-Campus-Topology" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+        </article>
+        <article class="system-card">
+          <div class="card-index">SYS-03 <span>OPERATIONS</span></div><h3>Mini Control Plane</h3>
+          <p>Python and Linux-based Telegram interface for operating self-hosted services through automated, controlled system actions.</p>
+          <ul class="tech-list" aria-label="Mini Control Plane technologies"><li>Python</li><li>Linux</li><li>Telegram</li><li>Secure commands</li><li>Automation</li><li>systemd</li><li>Logging</li><li>Observability</li></ul>
+          <a class="repo-link" href="https://github.com/Xaknm-Hakim/mini-control-plane" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+        </article>
+        <article class="system-card">
+          <div class="card-index">SYS-04 <span>OBSERVABILITY</span></div><h3>Monitoring</h3>
+          <p>Observability stack for StudexHub, giving system and service health a clear monitoring and alerting layer.</p>
+          <ul class="tech-list" aria-label="Monitoring technologies"><li>Prometheus</li><li>Grafana</li><li>Alerting</li><li>Service health</li><li>System monitoring</li></ul>
+          <a class="repo-link" href="https://github.com/Xaknm-Hakim/Monitoring" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+      <div class="page-width"><div class="section-heading"><p class="kicker">02 / engineering stack</p><h2 id="stack-title">Tools across the<br><span>operating surface.</span></h2></div>
+        <div class="stack-grid">
+          <article><span>01</span><h3>Platform &amp; Infrastructure</h3><ul><li>Linux</li><li>Docker &amp; Docker Compose</li><li>Nginx</li><li>KVM</li><li>SSH</li><li>systemd</li></ul></article>
+          <article><span>02</span><h3>Cloud &amp; IaC</h3><ul><li>AWS</li><li>Terraform</li><li>Cloudflare</li><li>Cloud Computing</li><li>Infrastructure as Code</li><li>Infrastructure Automation</li></ul></article>
+          <article><span>03</span><h3>Observability &amp; Delivery</h3><ul><li>Prometheus</li><li>Grafana</li><li>GitHub Actions</li><li>CI/CD</li><li>Monitoring</li><li>Technical Documentation</li></ul></article>
+          <article><span>04</span><h3>Networking</h3><ul><li>Computer Networking</li><li>TCP/IP</li><li>VLAN / OSPF / HSRP</li><li>DHCP</li><li>Subnetting</li><li>Network Architecture</li></ul></article>
+          <article><span>05</span><h3>Backend &amp; Automation</h3><ul><li>Python / Bash / TypeScript</li><li>SQL / PostgreSQL</li><li>Prisma ORM</li><li>Back-End Web Development</li><li>Database Design</li></ul></article>
         </div>
-        <div class="hero-image">
-          <img src="images/profile.JPG" alt="Portrait of Muhammad Hakim">
-        </div>
-      </header>
+      </div>
+    </section>
 
-      <section aria-labelledby="about-title">
-        <p class="section-label">Background</p>
-        <h2 id="about-title">About</h2>
-        <p>As a Diploma in Information Technology student at UTHM, I am developing hands-on knowledge across Linux, networking, backend development, containerisation, infrastructure automation, CI/CD, observability, and cloud infrastructure. I enjoy understanding how these layers fit together to support dependable services after they are built.</p>
-      </section>
+    <section class="direction page-width" aria-labelledby="direction-title"><p class="kicker">03 / current direction</p><div><h2 id="direction-title">Interested in what happens <span>after the build.</span></h2><p>My focus is the practical work of getting services deployed and keeping them useful: infrastructure automation, reliability, monitoring, recovery, scalability, maintainability, and cloud platforms. I am continuing to deepen this foundation through hands-on systems and infrastructure projects.</p></div></section>
+  </main>
 
-      <section id="projects" aria-labelledby="projects-title">
-        <p class="section-label">Selected work</p>
-        <h2 id="projects-title">Projects</h2>
-        <div class="project-grid">
-          <article class="project">
-            <h3>StudexHub</h3>
-            <p>Full-stack academic management platform for semesters, courses, assignments, schedules, academic performance, and reminders. My contribution focused primarily on the backend and infrastructure.</p>
-            <p class="tech">Backend API · Authentication &amp; sessions · PostgreSQL · Prisma ORM · Docker Compose · Nginx · Cloudflare Tunnel · Linux deployment · Monitoring · CI · Backups</p>
-            <a class="project-link" href="https://github.com/Xaknm-Hakim/StudexHub" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="project">
-            <h3>Enterprise Campus Network Design</h3>
-            <p>Enterprise campus network simulation with segmentation, routing, gateway redundancy, central services, VoIP, and failover testing.</p>
-            <p class="tech">VLAN · OSPF · HSRP · DHCP · ACLs · VoIP · Redundancy · Network architecture</p>
-            <a class="project-link" href="https://github.com/Xaknm-Hakim/Network-Campus-Topology" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="project">
-            <h3>Mini Control Plane</h3>
-            <p>Minimal control plane for homelab and self-hosted services, providing automated operations, secure command execution, and system-level observability through a Python-based Telegram interface.</p>
-            <p class="tech">Python · Linux · Telegram interface · Secure command execution · systemd · Logging · Observability</p>
-            <a class="project-link" href="https://github.com/Xaknm-Hakim/mini-control-plane" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="project">
-            <h3>Monitoring</h3>
-            <p>Observability stack for StudexHub, using Prometheus-based monitoring, Grafana dashboards, and alerting for system and service health.</p>
-            <p class="tech">Prometheus · Grafana · Alerting · Service health · System monitoring</p>
-            <a class="project-link" href="https://github.com/Xaknm-Hakim/Monitoring" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
-      </section>
-
-      <section aria-labelledby="skills-title">
-        <p class="section-label">Technical focus</p>
-        <h2 id="skills-title">Skills</h2>
-        <div class="skill-grid">
-          <article class="skill-group"><h3>Platform &amp; Infrastructure</h3><p>Linux, Docker, Docker Compose, Nginx, KVM, SSH, systemd</p></article>
-          <article class="skill-group"><h3>Cloud &amp; IaC</h3><p>AWS, Terraform, Cloudflare, Cloud Computing, Infrastructure as Code, Infrastructure Automation</p></article>
-          <article class="skill-group"><h3>Observability &amp; Delivery</h3><p>Prometheus, Grafana, GitHub Actions, CI/CD, Monitoring, Technical Documentation</p></article>
-          <article class="skill-group"><h3>Networking</h3><p>Computer Networking, TCP/IP, VLAN, OSPF, HSRP, DHCP, Subnetting, Network Architecture</p></article>
-          <article class="skill-group"><h3>Backend &amp; Automation</h3><p>Python, Bash, TypeScript, SQL, PostgreSQL, Prisma ORM, Back-End Web Development, Database Design</p></article>
-        </div>
-      </section>
-
-      <section class="contact" aria-labelledby="contact-title">
-        <p class="section-label">Get in touch</p>
-        <h2 id="contact-title">Contact</h2>
-        <p><a href="mailto:hakimz.7117@gmail.com">hakimz.7117@gmail.com</a></p>
-        <p><a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">github.com/Xaknm-Hakim</a><br><a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8</a></p>
-      </section>
-    </main>
-  </div>
+  <footer class="site-footer"><div class="page-width"><p><span class="signal" aria-hidden="true"></span> available for conversation</p><div><a href="mailto:hakimz.7117@gmail.com">hakimz.7117@gmail.com</a><a href="https://github.com/Xaknm-Hakim" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></footer>
 </body>
 </html>
