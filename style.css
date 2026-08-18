@@ -21,3 +21,9 @@ a { color:var(--blue); } a:focus-visible { outline:2px solid var(--green); outli
 @keyframes enter-up { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
 @keyframes status-pulse { 0%,100% { text-shadow:0 0 0 rgba(154,204,85,0); } 50% { text-shadow:0 0 8px rgba(154,204,85,.34); } }
 @media (prefers-reduced-motion:reduce) { .hero-copy,.identity-panel,.identity-panel .availability dd { animation:none; } .system-card,.repo-link { transition:none; } }
+
+/* Reveal targets stay visible without JavaScript; the ready class is applied only after the observer starts. */
+.reveal-ready [data-reveal] { opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; transition-delay:var(--reveal-delay,0ms); }
+.reveal-ready [data-reveal].is-revealed { opacity:1; transform:translateY(0); }
+.reveal-ready .system-card.is-revealed:hover { transform:translateY(-3px); }
+@media (prefers-reduced-motion:reduce) { .reveal-ready [data-reveal] { opacity:1; transform:none; transition:none; } }
