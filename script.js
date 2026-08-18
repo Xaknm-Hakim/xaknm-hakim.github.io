@@ -5,8 +5,12 @@
   if (reduceMotion.matches || !("IntersectionObserver" in window)) return;
 
   document.documentElement.classList.add("reveal-ready");
-  targets.forEach((target, index) => {
-    target.style.setProperty("--reveal-delay", `${Math.min(index % 5, 3) * 70}ms`);
+  const groupIndexes = new Map();
+  targets.forEach((target) => {
+    const group = target.dataset.revealGroup;
+    const index = groupIndexes.get(group) || 0;
+    target.style.setProperty("--reveal-delay", `${group ? index * 100 : 0}ms`);
+    if (group) groupIndexes.set(group, index + 1);
   });
 
   const observer = new IntersectionObserver((entries) => {
@@ -15,7 +19,7 @@
       entry.target.classList.add("is-revealed");
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.2, rootMargin: "0px 0px -12% 0px" });
 
   targets.forEach((target) => observer.observe(target));
 })();
